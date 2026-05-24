@@ -48,7 +48,7 @@ jobs:
           loose-matching: true
       - name: Install commitlint
         run: |
-          npm install --no-save @commitlint/{config-conventional,cli} --legacy-peer-deps
+          npm install --no-save --no-package-lock @commitlint/{config-conventional,cli} --legacy-peer-deps
       - name: Lint commits
         run: |
           npx commitlint --from=origin/main --to=HEAD --config ./.github/workflows/configs/commitlint.config.js
