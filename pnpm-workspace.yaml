@@ -1,1 +1,6 @@
 minimumReleaseAge: 10080
+onlyBuiltDependencies:
+  - "@biomejs/biome"
+  - core-js
+  - "@vscode/vsce-sign"
+  - keytar
