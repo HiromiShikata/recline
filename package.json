@@ -73,14 +73,6 @@
     "repomix": "^0.2.22",
     "@vscode/vsce": "^3.2.1"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome",
-      "core-js",
-      "@vscode/vsce-sign",
-      "keytar"
-    ]
-  },
   "activationEvents": ["onStartupFinished"],
   "contributes": {
     "commands": [
