@@ -18,6 +18,6 @@ jobs:
         with:
           exclude-branches: 'release/**, dependabot/**, project-common/**, renovate/**'
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          loose-matching: true
+          loose-matching: false
       - name: Get the output
         run: echo "How many linked issues? ${{ steps.check-linked-issues.outputs.linked_issues_count }}"
